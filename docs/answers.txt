@@ -1,0 +1,54 @@
+Annotations
+Git Lab Tutorials completed on: 10/23/2025
+GitHub account created on: 10/23/2025
+Grader access: I will grant collaborator access to ____________________ (Write) on my fork.
+
+1) Saved console output after push from step 3.C
+
+jags4@Ryans-PC MINGW64 ~/assignment2 (master)
+$ git push
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 383 bytes | 383.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/King-RahRah/assignment2.git
+   f4975e5..4d85d64  master -> master
+
+
+2) Total number of commits so far (command used shown too)
+Answer: 9
+Command: git rev-list --count HEAD
+
+3) When was README.md last modified? (include command)
+Answer: 2025-10-23 19:30:11 -0400
+Command: git log -1 --format=%ci -- README.md
+
+4) Two reasons why branches are used
+- Isolate feature/fix work without destabilizing main.
+- Enable parallel development with safer review/merging.
+
+5) Difference between git log and git status
+- git log: shows commit history (authors, dates, messages).
+- git status: shows working tree vs index/HEAD (staged, unstaged, untracked).
+
+6) Command to see commits where Vehicle.h was included
+git log --follow --name-only -- Vehicle.h
+
+7) Command to see commits with “file” in the commit message
+git log --grep="file"
+
+8) OOP definitions
+- Inheritance: a class derives from another to reuse/extend behavior and state.
+- Polymorphism: one interface/base type refers to different implementations; calls dispatch to the correct overridden method.
+- Encapsulation: bundle data with methods, expose a public interface, hide internal representation.
+
+9) Main difference: “Dictator & Lieutenants” vs “Integration Manager”
+Integration Manager: one integrator merges into the blessed repo.
+Dictator & Lieutenants: lieutenants aggregate many contributors; dictator does final merges into the blessed repo.
+
+10) Why “Dictator & Lieutenants” scales better than “Centralized” for ~100 devs
+Work/reviews/conflict resolution are partitioned among lieutenants, removing a single bottleneck while the dictator keeps final consistency.
