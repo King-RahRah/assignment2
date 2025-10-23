@@ -1,7 +1,8 @@
 Annotations
 Git Lab Tutorials completed on: 10/23/2025
 GitHub account created on: 10/23/2025
-Grader access: I will grant collaborator access to ____________________ (Write) on my fork.
+Grader access: repository is public for review.
+
 
 1) Saved console output after push from step 3.C
 
